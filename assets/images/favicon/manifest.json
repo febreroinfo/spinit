@@ -1,0 +1,23 @@
+{
+  "name": "SPINiT",
+  "short_name": "SPINiT",
+  "description": "Create a spinning wheel and let your decision be driven by it.",
+  "start_url": "/spinit/index.html",
+  "scope": "/spinit/index.html",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#FFFF00",
+  "background_color": "#FFFF00",
+  "display": "standalone"
+}

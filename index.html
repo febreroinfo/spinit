@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SPINiT</title>
+<meta name="description" content="Create a spinning wheel and let your decision be driven by it."/>
+<meta name="keywords" content="Jose Febrero, JSON, Canvas, Tools, SPINiT"/>
+<meta name="theme-color" content="#FFFF00"/>
+<meta property="og:site_name" content="SPINiT"/>
+<meta property="og:title" content="SPINiT"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://github.com/febreroinfo/"/>
+<meta property="og:description" content="Create a spinning wheel and let your decision be driven by it."/>
+<meta property="og:image" content="./assets/images/spinit.png"/>
+<link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="16x16"/>
+<link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg"/>
+<link rel="apple-touch-icon" href="./assets/images/favicon/apple-touch-icon.png"/>
+<link rel="manifest" href="./assets/images/favicon/manifest.json"/>
+<link rel="stylesheet" href="./assets/styles/main.min.css"/></head>
+<body>
+<header class="navbar">
+<a href="#home" aria-label="Skip to Content" class="skip">Skip to Content</a>
+<a href="/spinit" target="_self" title="home">
+<span class="logo">
+<img src="./assets/images/svg/spinit.svg" width="125" height="43" alt="SpiniT"/></span></a>
+<nav>
+<button id="menu">Info</button></nav></header>
+<main class="content">
+<section id="home" data-open="open" class="content__item">
+<article>
+<h1>Spin IT</h1>
+<div class="wheel">
+<div class="wheel__option">
+<input id="option" checked="checked" type="checkbox" class="wheel__input"/>
+<label for="option" class="wheel__label">
+<strong>Show Options</strong></label>
+<div class="wheel__entry">
+<label for="section">Write a list with each item on a new line. Each item will be a slice of your wheel.</label>
+<textarea id="section" rows="6"></textarea>
+<div class="wheel__audio">
+<label for="sound">Play Sound
+<input id="sound" type="checkbox" class="sr__only"/>
+<span class="wheel__checkmark"></span></label></div></div></div>
+<div class="wheel__content">
+<canvas id="wheel" height="400" width="400" class="wheel__canvas"></canvas>
+<div class="wheel__center"></div></div>
+<div class="wheel__result">
+<span id="result"></span></div>
+<button id="spin" type="button" class="wheel__spin">Spin the Wheel</button>
+<button id="remove" type="button" class="wheel__remove">Remove
+<span id="article" class="wheel__item">selected item</span>&nbsp;from the wheel?</button>
+<button id="reset" type="button" class="wheel__reset">Reset Wheel</button></div></article></section>
+<section id="info" data-open="false" class="content__item">
+<article>
+<h2>What is it?</h2>
+<p>A tool that lets you insert text and spin a wheel to decide a random result. Create a spinning wheel and let your decision be driven by it.</p></article>
+<article>
+<h2>How to use it?</h2>
+<ol>
+<li>
+<p>Write a list of text (e.g. names, activities, chores), and make sure each item is on a new line.</p></li>
+<li>
+<p>Click the
+<code>Spin the Wheel</code>&nbsp;button and the wheel will decide for you.</p></li></ol></article></section>
+<button id="up" title="Back to Top" data-open="false" class="top">
+<span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="top__icon">
+<path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+<path d="M9 12h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v6h-6v-6z"></path>
+<path d="M9 21h6"></path></svg></span></button></main>
+<footer>
+<p>
+<span>Made with&nbsp;</span>
+<span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="footer__icon">
+<path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+<path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" class="icon__active"></path>
+<path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" class="icon__active"></path>
+<path d="M12.5 15.5l2 2" class="icon__active"></path>
+<path d="M15 13l2 2" class="icon__active"></path></svg></span>
+<span>&nbsp;by FebreroInfo. 2024</span></p>
+<ul>
+<li>
+<a href="https://github.com/febreroinfo" target="_blank" rel="noopener noreferrer">Github</a></li>
+<li>
+<a href="https://codepen.io/febreroinfo" target="_blank" rel="noopener noreferrer">Codepen</a></li>
+<li>
+<a id="email" href="#" data-email="false" tabindex="0">Contact</a></li></ul>
+<figure id="status" data-open="false" aria-label="Network Status" class="network">
+<span id="online" data-open="false" class="network__online">Hurray! Internet is back online.</span>
+<span id="offline" data-open="false" class="network__offline">Opps! Internet is offline.</span></figure></footer></body>
+<script defer=" " src="./assets/scripts/main.min.js"></script></html>
